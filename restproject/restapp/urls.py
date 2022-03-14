@@ -7,6 +7,6 @@ router.register(r'users',views.userviewset)
 router.register(r'groups',views.gruopviewset)
 
 urlpatterns = [
-    path('',include(router.urls)),
-    path('api-auth/',include('rest_framework.urls',namespace='rest_framework'))
+    path('default/',include(router.urls)),
+    path('',include('rest_framework.urls',namespace='rest_framework'))
 ]
